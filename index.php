@@ -63,7 +63,7 @@
 	{
 	    if ($_GET['url'] == "auth") 
 	    {	    	
-			echo $_GET['id'];
+			echo 'id : '.$_GET['id'];
 	    }
 	}
 	else
@@ -71,8 +71,8 @@
 	{
 	    if ($_GET['url'] == "auth") 
 	    {	    	
-			echo $_POST['username'];
-			echo $_POST['password'];			
+			echo 'username : '.$_POST['username'].'</br>';
+			echo 'password : '.$_POST['password'];			
 	    }
 	    else
 	    if ($_GET['url'] == "raw") 
@@ -87,8 +87,8 @@
 	{
 	    if ($_GET['url'] == "auth") 
 	    {	    				
-			echo raw_data('username');
-			echo raw_data('password');
+			echo 'username : '.raw_data('username').'</br>';
+			echo 'password : '.raw_data('password');
 	    }
 	}
 	else
@@ -96,7 +96,7 @@
 	{
 	    if ($_GET['url'] == "auth") 
 	    {	    	
-			echo raw_data('id');		
+			echo 'id : '.raw_data('id');		
 	    }
 	}
 ?>
