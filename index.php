@@ -71,7 +71,7 @@
 	{
 	    if ($_GET['url'] == "auth") 
 	    {	    	
-			echo 'username : '.$_POST['username'].'</br>';
+			echo 'username : '.$_POST['username'].',';
 			echo 'password : '.$_POST['password'];			
 	    }
 	    else
@@ -87,7 +87,7 @@
 	{
 	    if ($_GET['url'] == "auth") 
 	    {	    				
-			echo 'username : '.raw_data('username').'</br>';
+			echo 'username : '.raw_data('username').',';
 			echo 'password : '.raw_data('password');
 	    }
 	}
