@@ -1,5 +1,5 @@
 <?php
-	$GLOBALS['url_auth'] = "http://localhost/api/admin/auth/index";    
+    $GLOBALS['url_auth'] = "http://www.inspibook.com/wam/admin/auth/index";    
     $GLOBALS['key_auth'] = "5051c4572b9bf8df0080e7c828a1b017"; 
 
     $GLOBALS['username'] = "asdi";
