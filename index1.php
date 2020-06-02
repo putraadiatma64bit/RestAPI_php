@@ -61,7 +61,7 @@
 	    	$data = request_key(getallheaders(),$GLOBALS['username'],$GLOBALS['password'],$GLOBALS['key_client']);
 			$auth = json_decode($data);
 			if(($auth->auth_server == $GLOBALS['key_auth'])&&($auth->auth_client == sha1($GLOBALS['key_client'])))
-				echo $_GET['id'];
+				echo 'id : '.$_GET['id'];
 	    }
 	}
 	else
@@ -73,8 +73,8 @@
 			$auth = json_decode($data);
 			if(($auth->auth_server == $GLOBALS['key_auth'])&&($auth->auth_client == sha1($GLOBALS['key_client'])))
 			{
-				echo $_POST['username'];
-				echo $_POST['password'];
+				echo 'username : '.$_POST['username'].'</br>';
+				echo 'password : '.$_POST['password'];
 			}
 	    }
 	    else
@@ -98,8 +98,8 @@
 			$auth = json_decode($data);
 			if(($auth->auth_server == $GLOBALS['key_auth'])&&($auth->auth_client == sha1($GLOBALS['key_client'])))
 			{				
-				echo raw_data('username');
-				echo raw_data('password');
+				echo 'username : '.raw_data('username').'</br>';
+				echo 'password : '.raw_data('password');
 
 			}
 	    }
@@ -113,7 +113,7 @@
 			$auth = json_decode($data);
 			if(($auth->auth_server == $GLOBALS['key_auth'])&&($auth->auth_client == sha1($GLOBALS['key_client'])))
 			{
-				echo raw_data('id');
+				echo 'id : '.raw_data('id');
 			}
 	    }
 	}
